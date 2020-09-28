@@ -1,0 +1,13 @@
+
+.text-style {
+    color: blueviolet;
+    color: #893043;
+    /* 水平对齐方式 只有block类型的元素可以使用 */
+    text-align: center;
+    /* 文本装饰 */
+    text-decoration: underline;
+    /* 文本缩进 em是当前元素两个文字的大小 */
+    text-indent: 2em;
+    /* 行高  文本高度+上下间距 */
+    line-height: 40px;
+}

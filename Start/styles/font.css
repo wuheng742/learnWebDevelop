@@ -1,6 +1,17 @@
 
 .main-font {
-    font-family: 'Courier New', Courier, monospace;
+    /* 前面的字体查找不到，会自动使用后面的字体 */
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 20px;
+    /* normal是400 不加单位 */
+    font-weight: 700;
+    /* 斜体 */
+    font-style: italic;
+    /* 复合属性 size 和 family 必须写 其他的可以省略，但是顺序不能乱 */
+    font: 10px 'Courier New';
 }
 
-
+body {
+    /* 标题标签比较特殊，没办法直接继承到这个属性 */
+    font-size: 15px;
+}
