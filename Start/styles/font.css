@@ -8,7 +8,8 @@
     /* 斜体 */
     font-style: italic;
     /* 复合属性 size 和 family 必须写 其他的可以省略，但是顺序不能乱 */
-    font: 10px 'Courier New';
+    /* font-style font-weight font-size/line-height font-family */
+    font: 10px/30px 'Courier New';
 }
 
 body {

@@ -1,0 +1,21 @@
+
+
+p {
+    background-color: red;
+}
+
+.gray {
+    background-color: gray;
+}
+
+#image {
+    background-color: green;
+}
+
+* {
+    font-size: 16px;
+    text-align: center;
+    /* te2em   首字母加属性首字母或者值 */
+    text-indent: 2em;
+}
+
