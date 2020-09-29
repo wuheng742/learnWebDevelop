@@ -1,5 +1,41 @@
 
 
+/* 元素显示模式 */
+div {
+    /* 块状元素
+    独占一行
+    可以设置宽高和内外边距
+    宽度默认和父元素一样宽
+    容器元素，里面可以放块或者行内元素 */
+    /* 文字类的标签不允许放块状元素 p 或者是h1 */
+    display: block;
+}
+
+
+span {
+    /* 行内元素
+    相邻的行内元素在一行，一行显示多个
+    宽高直接设置无效
+    默认包裹着内容
+    只能容纳其他的行内元素
+    a链接内不要再放a链接
+    只有a可以放块级元素
+    */
+    display: block;
+}
+
+
+img {
+    /* 行内块元素 
+    可以一行放置多个
+    img input td
+    本身宽度是内容宽度
+    可以设置宽高
+    */
+    display: inline-block;
+}
+
+/* 基础选择器 */
 p {
     background-color: red;
 }
@@ -15,7 +51,64 @@ p {
 * {
     font-size: 16px;
     text-align: center;
-    /* te2em   首字母加属性首字母或者值 */
+    /* te2em   Emmet语法 首字母加属性首字母或者值 */
     text-indent: 2em;
 }
 
+/* 复合选择器 */
+
+/* 后代选择器 可以选择父元素内的所有元素 */
+ul span {
+    text-indent: 2em;
+    color: red;
+}
+
+ul li span {
+    text-indent: 2em;
+    color: red;
+}
+
+
+/* 子元素选择器 只会选择下一级元素 */
+ul>li>span {
+    color: orange;
+}
+
+
+/* 并集选择器 可以选择多组标签 集体声明 */
+
+div, p, ul>li>span {
+    color: green;
+}
+
+/* 伪类选择器  */
+
+
+/* 这四个顺序不能颠倒 */
+/* 未点击 */
+ul>li>a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* 点击完毕 */
+ul>li>a:visited {
+    color: red;
+}
+
+/* 鼠标悬停 */
+ul>li>a:hover {
+    color: skyblue;
+}
+
+/* 按下未松手 */
+ul>li>a:active {
+    color: seashell;
+}
+
+/* 选中聚焦的表单元素 */
+input:focus {
+    background-color: red;
+    text-indent: 0em;
+    text-align: left;
+}
