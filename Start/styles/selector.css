@@ -21,7 +21,7 @@ span {
     a链接内不要再放a链接
     只有a可以放块级元素
     */
-    display: block;
+    display: inline;
 }
 
 
