@@ -1,0 +1,47 @@
+
+.father {
+    overflow: hidden;
+}
+
+/* 第一种方法 */
+.fix-float::before, .fix-float::after {
+    content: "";
+    display: table;
+}
+
+.fix-float::after {
+    clear: both;
+}
+
+
+/* 第二种方法 给父元素内容后面，新增一个元素，设置clear 来清除浮动 默认是添加行内元素 需要换成块元素 */
+.fix-float::after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+
+/* 低版本ie 的兼容设置 */
+.fix-float {
+    /* 兼容ie 6, 7 */
+    *zoom: 1;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.float {
+    background-color: red;
+    width: 150px;
+    height: 200px;
+    float: left;
+}
+
+.float3 {
+    float: right;
+}
+

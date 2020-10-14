@@ -1,0 +1,99 @@
+
+
+.position {
+    /* 定位模式 */
+    /* 静态定位就是在文档流之中 很少用 */
+    position: static;
+    /* 以自己原来的位置为准 相对定位  没有脱离标准流 */
+    position: relative;
+    /* 相对于父元素进行移动 绝对定位 如果没有定位属性的父元素  就会以根元素为基准  脱离标准流 */
+    position: absolute;
+    /* 相对于浏览器的视口移动 和父元素没有关系 滚动的时候也不会移动 脱离标准流 */
+    position: fixed;
+
+    /* 保留位置 根据视口移动 必须添加至少一个偏移属性 */
+    position: sticky;
+    /* 定位的属性 */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    /* 叠放顺序  数字越大，越靠上 */
+    z-index: 1;
+}
+
+/* div {
+    width: 200px;
+    height: 200px;
+} */
+
+.div1 {
+    background-color: red;
+}
+
+.div3 {
+    background-color: orange;
+}
+
+.relative {
+    background-color: green;
+    position: relative;
+
+    top: 30px;
+    left: 30px;
+}
+
+
+
+.div4 {
+    background-color: grey;
+    height: 200px;
+    width: 300px;
+    /* display: inline; */
+}
+
+.absolute {
+
+    height: 200px;
+    width: 200px;
+
+    
+    float: left;
+    position: absolute;
+    /* left: 300px; */
+    background-color: pink;
+}
+
+
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    /* 可以同时设置 先走position 相关的 再走margin */
+    right: 40px;
+    margin-right: 40px;
+}
+
+.sticky {
+    position: sticky;
+    /* 超过30 就是正常文档流内的元素 到了30及以内 就变成固定定位 */
+    top: 30px;
+    background-color: plum;
+    width: 300px;
+    height: 300px;
+}
+
+.father {
+    background-color: rebeccapurple;
+    /* border: rebeccapurple 10px solid; */
+    position: relative;
+}
+
+.son {
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    background-color: rosybrown;
+}
+
+

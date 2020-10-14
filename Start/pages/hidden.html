@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hidden</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+        }
+        .display {
+            /* 可以隐藏对象 不占用原来的位置 并没有删除 只是隐藏了 */
+            display: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+        }
+        .father:hover div {
+            display: block;
+        }
+
+        .visibility {
+            /* 隐藏对象，位置保留 */
+            visibility: hidden;
+        }
+        .overflow {
+            /* 超出部分隐藏 */
+            overflow: hidden;
+        }
+        .father {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <div class="display">display</div>
+    <div class="visibility">visibility</div> -->
+
+    <div class="father">
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1602670045430&di=b688fea3a7e56b3e62b9043d2cf976f2&imgtype=0&src=http%3A%2F%2Fa4.att.hudong.com%2F43%2F83%2F01300000241358124822839175242.jpg" alt="">
+        <div class="display"></div>
+    </div>
+</body>
+</html>
