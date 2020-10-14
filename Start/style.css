@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?keyf6e');
+  src:  url('fonts/icomoon.eot?keyf6e#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?keyf6e') format('truetype'),
+    url('fonts/icomoon.woff?keyf6e') format('woff'),
+    url('fonts/icomoon.svg?keyf6e#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-1password:before {
+  content: "\e904";
+  color: #0094f5;
+}
+.icon-500px:before {
+  content: "\e906";
+  color: #0099e5;
+}
+.icon-abbrobotstudio:before {
+  content: "\e910";
+  color: #ff9e0f;
+}
+.icon-about-dot-me:before {
+  content: "\e911";
+  color: #00a98f;
+}
+.icon-abstract:before {
+  content: "\e912";
+}
+.icon-academia:before {
+  content: "\e913";
+}
+.icon-number:before {
+  content: "\e900";
+}
+.icon-number1:before {
+  content: "\e901";
+}
+.icon-number2:before {
+  content: "\e902";
+}
+.icon-number3:before {
+  content: "\e903";
+}
+.icon-number4:before {
+  content: "\1f304";
+}
+.icon-number5:before {
+  content: "\e905";
+}
+.icon-number6:before {
+  content: "\1f331";
+}
+.icon-number7:before {
+  content: "\e907";
+}
+.icon-calendar:before {
+  content: "\e908";
+}
+.icon-file:before {
+  content: "\e909";
+}
+.icon-file1:before {
+  content: "\e90a";
+}
+.icon-file2:before {
+  content: "\e90b";
+}
+.icon-film:before {
+  content: "\e90c";
+}
+.icon-film1:before {
+  content: "\e90d";
+}
+.icon-film2:before {
+  content: "\e90e";
+}
+.icon-microphone:before {
+  content: "\e90f";
+}

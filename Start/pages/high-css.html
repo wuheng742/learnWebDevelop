@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>high-css</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        
+        .box1 {
+            width: 60px;
+            height: 60px;
+            background-image: url(sdf.png);
+            /* 背景图片移动，移动到大图中需要的图片位置上 */
+            background-position: -180 0;
+        }
+
+        span {
+            font-family: icomoon;
+            color: red;
+        }
+
+        .triangles {
+            width: 0;
+            height: 0;
+            border-top: red 10px solid;
+            border-bottom: yellow 10px solid;
+            border-left: blue 10px solid;
+            border-right: darkblue 10px solid;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 精灵图 根据背景位置定位大图上的小图标 -->
+    <div class="box1"></div>
+
+    <!-- 字体图标 字体图标体积小 可以随意改变颜色 大小 支持所有的浏览器 -->
+    <span class="font">🌄</span>
+
+    <!-- 制作一个三角形 -->
+    <div class="triangles"></div>
+
+
+    <!-- 界面样式 -->
+    <!-- 更改鼠标的样式 -->
+    <div style="cursor: pointer;">1231231</div>
+    <!-- 表单轮廓线取消 -->
+    <input type="text" style="outline: none;">
+    <!-- 文本域防止拖拽 -->
+    <input type="textarea" style="outline: none; resize: none;">
+
+</body>
+
+</html>
