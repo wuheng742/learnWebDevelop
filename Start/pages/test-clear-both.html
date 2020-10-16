@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-clear-both</title>
+    <style>
+        .fix-float {
+            /* clear: both; */
+            /* 只对自己生效，不会干扰到其他的元素布局 */
+            clear: left;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        #father div {
+            width: 200px;
+            height: 200px;
+        }
+
+        #box1 {
+            background-color: yellow;
+        }
+
+        #box2 {
+            background-color: blue;
+        }
+
+        #box3 {
+            background-color: black;
+        }
+
+        #box4 {
+            background-color: red;
+        }
+
+        #father {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="father">
+        <div id="box1" class="float-right"></div>
+        <div id="box2" class="float-right"></div>
+        <div id="box3" class="fix-float"></div>
+        <div id="box4" class="float-left"></div>
+    </div>
+
+
+</body>
+
+</html>

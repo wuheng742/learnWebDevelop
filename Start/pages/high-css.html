@@ -16,10 +16,10 @@
             background-position: -180 0;
         }
 
-        span {
+        /* span {
             font-family: icomoon;
             color: red;
-        }
+        } */
 
         .triangles {
             width: 0;
@@ -28,6 +28,60 @@
             border-bottom: yellow 10px solid;
             border-left: blue 10px solid;
             border-right: darkblue 10px solid;
+        }
+
+        .vertical-align {
+            /* 适用于行内元素和行内块元素，将里面的文本或者图片与相邻的垂直对齐 */
+            vertical-align: middle;
+            font-size: 100px;
+        }
+
+        .ver-father {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+
+
+        .text-wrap {
+            width: 100px;
+            height: 100px;
+            /* 不换行 */
+            white-space: nowrap;
+            background-color: orange;
+            overflow: hidden;
+            /* 文本隐藏后的效果 */
+            text-overflow: ellipsis;
+
+
+            /* 多行文本显示省略号，有兼容性问题 */
+            display: -webkit-box;
+            /* 限制行数 */
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+
+        }
+
+
+
+        li {
+            list-style: none;
+            width: 200px;
+            height: 300px;
+            border:transparent 2px solid;
+            float: left;
+        }
+
+        li:hover {
+            border-color: red;
+        }
+
+        .left-float {
+            background-color: yellow;
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin-right: 10px;
         }
     </style>
 
@@ -52,6 +106,24 @@
     <input type="text" style="outline: none;">
     <!-- 文本域防止拖拽 -->
     <input type="textarea" style="outline: none; resize: none;">
+
+    <!-- 文字，行内元素，行内块元素的纵向对齐 -->
+    <!-- <div class="ver-father">asdfsdfsdf<span class="vertical-align">askdfjwheuhsnksdfjksdhfj</span> </div> -->
+
+    <!-- 文本溢出变成省略号 -->
+    <div class="text-wrap">adkfskdfjksdhfjksdhfkjsdhfkjhsdkjfhsd</div>
+
+    <ul style="overflow: hidden;">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <div>
+        <div class="left-float"></div>   <span style="vertical-align: middle;" >asdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsfsdfsdfsdfsdfsdfsdfsdfsd</span> 
+    </div>
 
 </body>
 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3 new</title>
+    <style>
+        /* 新增一些选择器 也是有兼容的问题，需要IE9+的版本 */
+        /* 属性选择器 权重为0,0,1,0 */
+        input[name] {
+            background-color: orange;
+            color: red;
+        }
+        input[type=tel] {
+            color: yellow;
+        }
+        div[class^=box] {
+            display: inline;
+            background-color: red;
+        }
+        div[class$=1] {
+            display: inline;
+            background-color: red;
+        }
+        div[class*=1] {
+            display: inline;
+            background-color: red;
+        }
+        /* 结构伪类选择器 权重为0,0,1,0 */
+        /* 选择子元素 会把所有的孩子排列序号 首先看序号，然后看需要的是什么元素 如果匹配不上就不生效 */
+        ul li:first-child {
+            color: pink;
+        }
+        ul li:last-child {
+            color: pink;
+        }
+        /* ul li:nth-child(3) {
+            color: pink;
+        } */
+        /* 可以使用关键字 even 偶数  odd 基数 */
+        /* ul li:nth-child(odd) {
+            color: pink;
+        } */
+
+        /* 可以跟公式 变量必须是n 从0开始 一直累加   2n就是选择偶数的孩子*/
+        ul li:nth-child(2n) {
+            color: pink;
+        }
+
+        /* 选择子元素 会把指定的孩子元素排列序号 首先看元素，然后看需要的序号 */
+        ul li:first-of-type {
+            color: pink;
+        }
+        ul li:last-of-type {
+            color: pink;
+        }
+        ul li:nth-of-type(n) {
+            color: pink;
+        }
+        /* 伪元素选择器 创建的元素不存在于文档树 权重是0,0,0,1 */
+        /* 首先创建一个元素，放在元素内容的最前面 默认添加的是行内元素 */
+        #fake-ele::before {
+            /* 必须要写的 */
+            content: 'before';
+
+        }
+
+        #fake-ele::after {
+            /* 必须要写的 */
+            content: 'after';
+
+        }
+        /* 鼠标经过，修改伪元素的文本颜色 */
+        #fake-ele:hover::before {
+            color: yellow;
+        }
+        
+
+        /* 其他的新属性 */
+        div {
+            /* 盒子大小包括内边距和边框 在不超过宽高的前提下 超过了盒子还是会变大 */
+            box-sizing: border-box;
+            /* 将图像的模糊等效果应用于元素中，后面跟的是函数 */
+            filter: blur(10);
+            /* 可以赋值函数，里面可以做运算 可以跟单位 */
+            width: calc(100% - 20px);
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <input type="tel" name="" id="">
+    <input type="search">
+
+    <div class="box11">1</div>
+    <div class="box21">2</div>
+    <div class="box31">3</div>
+    <div class="box41">4</div>
+    <div class="box51">5</div>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+
+
+
+    <div id="fake-ele">
+
+    </div>
+</body>
+</html>
