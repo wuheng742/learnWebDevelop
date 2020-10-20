@@ -1,0 +1,23 @@
+
+.page-w {
+    width: 1200px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.block-horz-center {
+    margin: 0 auto;
+}
+
+.fix-float::after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
