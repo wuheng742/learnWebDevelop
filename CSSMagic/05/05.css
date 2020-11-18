@@ -1,0 +1,37 @@
+
+
+
+.main {
+    margin: 50vh auto 0;
+    width: 200px;
+    transform: translateY(-50%);
+}
+
+/* .content {
+    padding: .2em;
+    background: beige;
+    background-image: linear-gradient(rgba(0,0,0,.2) 50%, transparent 0);
+    background-origin: content-box;
+    background-size: auto 3em;
+    line-height: 1.5;
+} */
+
+/* 插入换行 */
+/* dd, dt {
+    display: inline;
+}
+
+dd {
+    font-weight: bold;
+    margin: 0;
+}
+
+dd + dt::before {
+    content: '\A';
+    white-space: pre;
+}
+
+dd + dd::before {
+    content: ',';
+    margin-left: -.25em;
+} */
