@@ -1,0 +1,192 @@
+
+
+/* 饼图 SVG */
+
+.svg-contain {
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes fillup {
+    to {stroke-dasharray: 100 100}
+}
+
+circle {
+    fill: yellowgreen;
+    stroke: #655;
+    stroke-width: 32;
+    stroke-dasharray: 0 100;
+    animation: fillup 3s linear infinite;
+}
+
+svg {
+    background: yellowgreen;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+
+}
+
+/* 饼图 遮罩+动画实现 */
+/* .pie {
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, transparent 50%, #655 0);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(.5turn);
+    }
+}
+
+@keyframes bg {
+    50% {
+        background: #655;
+    }
+}
+
+.pie::before {
+    content: '';
+    display: block;
+    margin-left: 50%;
+    height: 100%;
+    border-radius: 0 100% 100% 0 / 50%;
+    transform-origin: left;
+    background-color: inherit;
+    animation: spin 50s linear infinite, bg 100s step-end infinite;
+    animation-play-state: paused;
+    animation-delay: inherit;
+} */
+
+
+/* 梯形标签页 */
+
+
+/* .trapezoid {
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+}
+
+.trapezoid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border: 2px solid blue;
+    background-color: red;
+    transform: scaleY(1.5) perspective(1em) rotateX(10deg);
+    transform-origin: bottom;
+} */
+
+
+/* 切角效果 */
+
+
+/* .shape-linear-gradient {
+    background: blue;
+    background: linear-gradient(to top left, blue, blue) top left,
+                linear-gradient(to top right, blue 50%, transparent 0) top right,
+                linear-gradient(to bottom right, blue 50%, transparent 0) bottom right,
+                linear-gradient(to bottom left, blue, blue) bottom left;
+    background-size: 70% 50%, 30% 50%, 30% 50%, 70% 50%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.shape-border-image {
+    border: 60px solid transparent;
+    border-image: 33.3% url('images/border-image.png');
+    background: blue;
+    background-clip: padding-box;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.shape-path {
+    background: #58a;
+    clip-path: polygon(
+        20px 0, calc(100% - 20px) 0, 100% 20px,
+        100% calc(100% - 20px), calc(100% - 20px) 100%,
+        20px 100%, 0 calc(100% - 20px), 0 20px
+    );  
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+} */
+
+
+/* 菱形的制作 */
+
+
+/* .rhombus {
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    width: 300px;
+    height: 150px;
+}
+
+.rhombus>img {
+    width: 100%;
+} */
+
+
+/* 平行四边形 */
+
+
+/* .parallelogram {
+    margin: 0 auto;
+    width: 300px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    position: relative;
+}
+
+.parallelogram::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: blue;
+    width: 100%;
+    height: 100%;
+    transform: skewX(45deg);
+    z-index: -1;
+} */
+
+
+/* 椭圆形的制作 */
+
+
+/* .ellipse {
+    width: 200px;
+    height: 300px;
+    background: red;
+    border-radius: 50%;
+}
+
+.half-ellipse {
+    width: 200px;
+    height: 300px;
+    background: red;
+    border-radius: 50% / 100% 100% 0 0;
+}
+
+.one-quarter-ellipse {
+    width: 200px;
+    height: 300px;
+    background: red;
+    border-radius: 100% 0 0 0;
+} */

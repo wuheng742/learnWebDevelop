@@ -1,0 +1,16 @@
+/* 单侧投影 */
+.one-side-shadow {
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 0 5px -5px black;
+    background: red;
+}
+
+/* 两侧投影 */
+.two-side-shadow {
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 0 5px -5px black,
+        -5px 0 5px -5px black;
+    background: red;
+}

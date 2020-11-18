@@ -1,0 +1,52 @@
+
+body {
+    font-size: 10px;
+}
+
+.button {
+    display: inline-block;
+
+    margin: 0 auto;
+    border: 1px solid #446d88;
+    padding: 0.6em 1.6em;
+
+    /* linear-gradient 是可以指定方向，和颜色的线性渐变函数 默认从上到下渐变 
+    方向可以指定一个角度，45deg。
+     或者一个结束的位置， to bottom right 就是右下角结束，这样会从左上角直线渐变到右下角 */
+    background: #58a linear-gradient(hsla(0, 0%, 100%, .2), transparent);
+    border-radius: 0.4em;
+    box-shadow: .15em .15em .3em rgba(0, 0, 0, .5);
+
+    color: white;
+    text-shadow: .1em .1em .3em rgba(0, 0, 0, .5);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.color {
+    color: red;
+    background: currentColor;
+    border: currentColor 1px solid;
+    text-align: center;
+}
+
+.inherit {
+    color: inherit;
+    background: orange;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+/* 匹配文档的根元素 */
+:root {
+    --value: 20px;
+}
+.first-value {
+    --value: 30px;
+}
+/* 这就是css中的动态的特性，在不同的层叠样式下，这属性的值不同 */
+.second-value {
+    font-size: var(--value, 50px);
+}
