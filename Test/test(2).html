@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+    <title>我是标题</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="前端,自学">
+</head>
+
+<body id="copy" data-clipboard-text="456456">
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <p>111</p>
+    <button data-clipboard-target='#copy' id='other' style="visibility: hidden;"></button>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.6/clipboard.js"></script>
+<script>
+
+
+    // var clipboard = new ClipboardJS("#copy")
+    // var clipboard2 = new ClipboardJS("#other")
+    // clipboard.on("success", function(e) {
+    // console.log(e, 'success')
+    // })
+    // clipboard.on("error", function(e) {
+    // console.log(e, 'error')
+    // })
+
+    // window.onscroll=function(e){
+    //     console.log("开始滚动")
+    //     let btn = document.getElementById("other")
+    //     btn.click()
+    // }
+
+    const copyToClipboard = str => {
+        const el = document.createElement('textarea');
+        el.value = str;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    };
+
+    copyToClipboard('aaaaaa');
+</script>
+
+</html>

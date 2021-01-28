@@ -1,0 +1,18 @@
+
+div {
+    /* width: 200px; */
+    height: 200px;
+    width: 200px;
+    
+    background: red;
+}
+
+#main {
+    position: relative;
+    left: 200px;
+    top: 200px;
+    background: yellow;
+}
+
+
+
