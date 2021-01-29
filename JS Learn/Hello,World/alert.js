@@ -1,0 +1,3 @@
+
+
+alert('local js');
