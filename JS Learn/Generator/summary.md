@@ -6,4 +6,4 @@
    1. 在调用next()后，程序会暂停在yield代码上，等待下一次调用
    2. 可以使用for...of迭代。
 
-3. Symbol.asyncIterator 是异步迭代器的symbol标志，异步迭代器需要next()返回一个promise对象，我们通常使用async标记next,并且在其中使用await, 如果使用for...of 应该使用await关键字修饰 for await(let i of items) {}, 生成器和迭代器的规则一致。
+3. Symbol.asyncIterator 是异步迭代器的symbol标志，异步迭代器需要next()返回一个promise对象，我们通常使用async标记next,并且在其中使用await, 如果使用for...of 应该使用await关键字修饰 for await(let i of items) {}, 在生成器中，直接在生成器方法上加async
